@@ -7,8 +7,9 @@ document.querySelector('button').onclick = function() {
     for (var i = 0; i < l; i++) {
         result.push(randomInteger(min, max));
     };
-    
-    console.log(result);
+
+    document.querySelector('#out').innerHTML = result;
+    document.querySelector('#out-input').value = result;
     return result;
 }
 
