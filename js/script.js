@@ -3,6 +3,9 @@ document.querySelector('button').onclick = function() {
     var min = document.querySelector('#min');
     var max = document.querySelector('#max');
     var result = [];
+    result.push(randomInteger(min, max));
+    console.log(result);
+    return result;
 }
 
 function randomInteger(max, min) {
