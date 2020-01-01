@@ -1,9 +1,13 @@
 document.querySelector('button').onclick = function() {
-    var l = document.querySelector('#length');
-    var min = document.querySelector('#min');
-    var max = document.querySelector('#max');
+    var l = document.querySelector('#length').value;
+    var min = document.querySelector('#min').value;
+    var max = document.querySelector('#max').value;
     var result = [];
-    result.push(randomInteger(min, max));
+
+    for (var i = 0; i < l; i++) {
+        result.push(randomInteger(min, max));
+    };
+    
     console.log(result);
     return result;
 }
